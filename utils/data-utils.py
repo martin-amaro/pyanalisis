@@ -8,3 +8,15 @@ def load_data(path: str):
     else:
         raise ValueError("Formato no soportado.")
     
+def handle_nulls(df: pd.DataFrame, method: str = "drop", fill_value=None):
+    if method == "drop":
+        return df.dropna()
+    elif method == "fill":
+        return df.fillna(fill_value)
+    else:
+        raise ValueError("Método no soportado.")
+    
+def normalize(df: pd.DataFrame, columns: list):
+    for col in columns:
+        df[col] = df[col].str.lower().str.strip()
+    return df
