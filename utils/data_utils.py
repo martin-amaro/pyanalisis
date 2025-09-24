@@ -27,3 +27,4 @@ def normalize(df: pd.DataFrame, columns: list):
 
 def clean_dollar_sign(df: pd.DataFrame, column: str):
     df[column] = df[column].replace(r"[\$,]", "", regex=True).astype(float)
+    return df
