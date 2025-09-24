@@ -1,0 +1,7 @@
+[
+  {"envio_id": 1, "producto_id": 1, "cantidad": 3, "bodega": "norte", "estado": "entregado"},
+  {"envio_id": 2, "producto_id": 2, "cantidad": 1, "bodega": "sur", "estado": "retrasado"},
+  {"envio_id": 3, "producto_id": 3, "cantidad": 5, "bodega": "norte", "estado": "entregado"},
+  {"envio_id": 4, "producto_id": 2, "cantidad": 2, "bodega": "centro", "estado": "retrasado"},
+  {"envio_id": 5, "producto_id": 5, "cantidad": 4, "bodega": "sur", "estado": "entregado"}
+]
