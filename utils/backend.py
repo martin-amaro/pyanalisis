@@ -1,7 +1,7 @@
 import requests
 import os
 
-backend_url = os.getenv("BACKEND_URL")
+backend_url = os.getenv("BACKEND_URL") or "http://localhost:8080"
 
 def backend_request(method, endpoint, token=None, data=None, params=None, timeout=10):
     """

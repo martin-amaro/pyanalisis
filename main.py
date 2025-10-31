@@ -14,6 +14,10 @@ auth:dict = backend_request('POST', '/auth/login', data={
     'password': '123456'
 })
 
+if auth == None:
+    raise RuntimeError("Abortando...")
+
+
 token = auth.get('token')
 
 response = backend_request('GET', '/api/users', token=token)
